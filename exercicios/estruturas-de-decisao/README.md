@@ -14,7 +14,7 @@ Faça os exercícios a seguir escrevendo código JavaScript a ser vinculado à s
 4. Para uma pessoa realizar um consórcio em um banco, é necessário que ela tenha 18 anos ou mais e possua renda mensal de 2 (dois) salários mínimos. Faça um script em JavaScript que solicite a idade e a renda mensal do usuário e exiba a mensagem se ele está apto ou não realizar um consórcio
 5. Em um concurso para professor em uma instituição de ensino, os seguintes critérios são considerados com as respectivas pontuações:
 	- Experiência: até 5 anos = 10 pontos; 5 anos ou mais = 20 pontos;
-	- Formação: superior = 10 pontos; pós-graduação = 20 pontos; mestrado = 30 pontos; doutorado = 40 pontos;
+	- Formação: graduação = 10 pontos; especialização = 20 pontos; mestrado = 30 pontos; doutorado = 40 pontos;
 	Faça um script em JavaScript que solicite a experiência e a formação do candidato, e calcule e exiba qual seria a sua pontuação para o concurso.
 6. Faça um script em JavaScript que solicite uma nota ao usuário e verifique se ela está entre 7.0 e 10.0.
 
