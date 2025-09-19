@@ -17,11 +17,7 @@ Os exercícios a seguir devem ser realizados utilizando `while`:
 
 ### Do...while
 
-Os exercícios a seguir devem ser realizados utilizando `do...while`:
 
-1. Escreva um programa que solicite 1 ou 0. Caso o usuário insira um número diferente, o programa deverá solicitar novamente uma entrada do usuário;
-2. Defina uma variável com uma "senha". Faça um laço de repetição que solicite a senha até que o usuário insira a senha correta (utilize prompt para capturar a entrada do usuário);
-3. Escreva um programa que solicite 5 números ao usuário e exiba ao final apenas o maior deles;
 
 ### For
 
