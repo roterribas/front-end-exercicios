@@ -19,8 +19,8 @@ function dividir(a, b) {
 }
 
 // Capturando dados do usuário (Exercício 4)
-let num1 = parseFloat(prompt("Exercício 4\nDigite o primeiro número:"));
-let num2 = parseFloat(prompt("Exercício 4\nDigite o segundo número:"));
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+let num2 = parseFloat(prompt("Digite o segundo número:"));
 
 // Mostrando resultados no console (Exercício 4)
 console.log("Soma: " + somar(num1, num2));
