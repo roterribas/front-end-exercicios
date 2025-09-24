@@ -22,7 +22,7 @@ if (forma === "quadrado") {
   let altura = Number(prompt("Digite a altura:"));
 
   let resultado = calcularArea(forma, largura, altura);
-  console.log("Resultado:", resultado);
+  console.log("Área do retangulo:", resultado);
 } else {
   console.log("Forma inválida!");
 }
