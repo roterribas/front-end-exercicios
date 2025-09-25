@@ -1,20 +1,26 @@
-const quadrado = function (x) {
-  return x * x;
-};
+// console.log("Mensagem do futuro:", mensagemDoFuturo('Davi'));
 
-const aviso = function (m) {
-	m = 'AVISO > ' + m;
-	console.log(m);
-}
+// function mensagemDoFuturo(nome) {
+//   return nome + ' ainda não temos uma inteligência artifical geral';
+// }
 
-aviso('Hora do intervalo!'); // Argumento
-aviso('')
+// const quadrado = function (x) {
+//   return x * x;
+// };
 
-// Invocação da função quadrado passando o argumento 12
-// console.log(quadrado(12));
-// console.log(quadrado(19));
-// console.log(quadrado(100));
-// console.log(quadrado(4));
+// const aviso = function (m) {
+// 	m = 'AVISO > ' + m;
+// 	console.log(m);
+// }
 
-let resultado = quadrado(12);
-console.log(resultado);
+// aviso('Hora do intervalo!'); // Argumento
+// aviso('')
+
+// // Invocação da função quadrado passando o argumento 12
+// // console.log(quadrado(12));
+// // console.log(quadrado(19));
+// // console.log(quadrado(100));
+// // console.log(quadrado(4));
+
+// let resultado = quadrado(12);
+// console.log(resultado);
