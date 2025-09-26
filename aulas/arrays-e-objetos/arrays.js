@@ -27,6 +27,9 @@ const indicadorDeUso = (numeroDeHoras) => {
 	}
 }
 
+diasDaSemana[4] = indicadorDeUso;
+
+
 for(let contador = 0; contador < usoDiasDaSemana.length ; contador++) {
 	let farol = indicadorDeUso(usoDiasDaSemana[contador]);
 	let dia = diasDaSemana[contador];

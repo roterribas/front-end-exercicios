@@ -1,0 +1,11 @@
+.card-livro {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.capa-livro {
+    text-align: center;
+    max-width: 200px;
+    align-self: center;
+}
