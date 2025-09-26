@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria DOM - Exercício</title>
+    <link rel="stylesheet" href="css/pico/pico.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header container">
+        <h1 id="titulo-site">📚 Livraria DOM</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#livros">Livros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content container">
+        <!-- Seção de Livros -->
+        <section id="secao-livros" class="livros">
+            <h2>Nossa Coleção</h2>
+            <div id="container-livros" class="cards-container grid">
+
+                <!-- Capitães da Areia (primeiro e em destaque) -->
+                <div id="capitaes-areia" class="card-livro">
+                    <span class="selo-novo">Novo</span>
+                    <img class="capa-livro" src="images/capas/capitaes-da-areia.jpg"
+                        alt="Capa do livro Capitães da Areia" />
+                    <h3 class="titulo-livro">Capitães da Areia</h3>
+                    <p class="descricao-livro">
+                        Publicado em 1937, <em>Capitães da Areia</em> é um romance de Jorge
+                        Amado que retrata a vida de meninos abandonados nas ruas de Salvador.
+                        A obra é considerada um clássico da literatura brasileira e denuncia
+                        as desigualdades sociais.
+                    </p>
+                    <span class="preco-livro">R$ 39,90</span>
+                </div>
+
+
+                <div id="o-cortico" class="card-livro">
+                    <img class="capa-livro" src="images/capas/o-cortico.jpeg" alt="Capa do livro O Cortiço" />
+                    <h3 class="titulo-livro">O Cortiço</h3>
+                    <p class="descricao-livro">
+                        O Cortiço é um romance naturalista do brasileiro
+                        Aluísio Azevedo, publicado em 1890, que
+                        denuncia a exploração e as péssimas condições de
+                        vida dos moradores das estalagens ou dos cortiços
+                        cariocas do final do século XIX.
+                    </p>
+                    <span class="preco-livro">R$ 29,99</span>
+                </div>
+
+                <div id="dom-casmurro" class="card-livro">
+                    <img class="capa-livro" src="./images/capas/dom-casmurro.webp" alt="Capa do livro Dom Casmurro" />
+                    <h3 class="titulo-livro">Dom Casmurro</h3>
+                    <p class="descricao-livro">
+                        Dom Casmurro é um romance escrito por Machado de
+                        Assis, publicado em 1899. Considerado pela crítica
+                        o terceiro romance da "Trilogia Realista",
+                        ao lado de Memórias Póstumas de Brás Cubas
+                        e Quincas Borba.
+                    </p>
+                    <span class="preco-livro">R$ 59,99</span>
+                </div>
+
+                <div id="vidas-secas" class="card-livro">
+                    <img class="capa-livro" src="images/capas/vidas-secas.jpg" alt="Capa do livro Vidas Secas" />
+                    <h3 class="titulo-livro">Vidas Secas</h3>
+                    <p class="descricao-livro">
+                        Quarto e último romance de Graciliano Ramos, narrado em
+                        terceira pessoa, <em>Vidas Secas</em> aborda a saga de uma
+                        família de retirantes do sertão nordestino em meio à seca,
+                        à miséria e à luta pela sobrevivência.
+                    </p>
+                    <span class="preco-livro">R$ 34,29</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p id="info-footer">2024 Livraria DOM. Uso livre do conteúdo.</p>
+        <nav class="footer-links">
+            <ul class="nav-list">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#politica">Política de Privacidade</a></li>
+                <li><a href="#termos">Termos de Uso</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
