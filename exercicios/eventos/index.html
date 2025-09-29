@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Festa Americana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🎉 Festa Americana</h1>
+        
+        <section class="adicao-de-itens container">
+            <label for="item">Item</label>
+            <input type="text" id="novo-item" name="item" placeholder="Digite um item (ex: Salgadinhos)">
+    
+            <label for="nome-pessoa">Nome</label>
+            <input type="text" id="nome-pessoa" name="nome-pessoa" placeholder="Nome da pessoa">
+
+            <button id="btn-adicionar">Adicionar Item</button>
+        </section>
+        
+        <section class="lista-de-itens container">
+            <p id="contador">0 itens adicionados</p>
+
+            <div id="lista-itens" class="lista itens">
+                <!-- Itens aparecerão aqui -->
+            </div>
+
+            <div id="mensagem">
+                Adicione alguns itens para começar!
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
