@@ -38,7 +38,9 @@ function escolherEmoji(item) {
     { palavras: ["cerveja", "chopp"], emoji: "🍺" },
     { palavras: ["suco", "laranja", "uva"], emoji: "🧃" },
     { palavras: ["refrigerante", "água", "guaraná"], emoji: "🥤" },
-    { palavras: ["prato", "copo", "talheres", "guardanapo"], emoji: "🧻" }
+    { palavras: ["prato", "copo", "talheres", "guardanapo"], emoji: "🧻" },
+    { palavras: ["macarrão"], emoji: "🍝" },
+    { palavras: ["banana"], emoji: "🍌" }
   ];
 
   for (const categoria of categorias) {
@@ -47,7 +49,7 @@ function escolherEmoji(item) {
     }
   }
 
-  return "🎁"; // emoji padrão para itens não categorizados
+  return "🍽"; // emoji padrão para itens não categorizados
 }
 
 function atualizarLista() {
