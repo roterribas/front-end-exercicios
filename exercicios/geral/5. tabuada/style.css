@@ -1,0 +1,70 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff0055;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: #f51e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100px;
+}
+
+input[type="submit"] {
+  background-color: #ff1462;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #8b495f;
+}
+
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  font-size: 1.2em;
+  background-color: #ff00a683;
+  color: white
+}
+
+th {
+  background-color: #ff3c00;
+  color: #ffbda8
+}
+
+label {
+    color: white;
+}
