@@ -1,0 +1,143 @@
+/*======================================================*/
+/* 1. VARIÁVEIS DE CORES (Para fácil manutenção)        */
+/*======================================================*/
+:root {
+    --cor-pokedex-principal: #D63447;     /* Vermelho/Rosa escuro do corpo */
+    --cor-display-fundo: #A3D4A8;         /* Verde claro do display retrô */
+    --cor-texto-principal: #333333;       /* Preto */
+    --cor-texto-display: #000000;         /* Preto puro no display */
+    --cor-botoes: #616161;                /* Cinza dos botões */
+    --cor-botoes-sombra: #404040;
+}
+
+
+/*======================================================*/
+/* 2. ESTILOS GERAIS E CORPO (Fundo de Grade)           */
+/*======================================================*/
+
+body {
+    /* Fundo com Padrão de Grade Sutil */
+    background-color: #222; 
+    background-image: repeating-linear-gradient(
+        0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 10px
+    ),
+    repeating-linear-gradient(
+        90deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 10px
+    );
+    
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Aplica a fonte retrô nos textos principais */
+* {
+    box-sizing: border-box;
+}
+
+/*======================================================*/
+/* 3. ESTRUTURA DA POKÉDEX (Aparelho GIGANTE)           */
+/*======================================================*/
+
+.pokedex-container {
+    background-color: var(--cor-pokedex-principal);
+    border: 15px solid var(--cor-texto-principal); /* Borda ainda mais grossa */
+    border-radius: 30px;
+    padding: 50px; /* Mais padding */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 
+                inset 0 0 20px rgba(255, 255, 255, 0.6); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 🔴 AUMENTO MAXIMIZADO DE LARGURA */
+    width: 600px; 
+}
+
+/* Título (Nome do Pokémon e ID) */
+#nome-pokemon {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffcc00; 
+    /* 🔴 FONTE BEM MAIOR */
+    font-size: 1.5em; 
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #000; 
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*======================================================*/
+/* 4. TELA DE DISPLAY (Maior)                           */
+/*======================================================*/
+
+.display-screen {
+    background-color: var(--cor-display-fundo);
+    border: 10px solid var(--cor-texto-principal); /* Borda bem grossa */
+    border-radius: 10px;
+    padding: 20px; /* Mais padding */
+    width: 100%;
+    /* 🔴 AUMENTO DE ALTURA PARA A IMAGEM CABER */
+    height: 350px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7); 
+}
+
+/* Imagem do Pokémon */
+#foto-pokemon {
+    image-rendering: pixelated; 
+    width: 100%;
+    /* 🔴 MAXIMIZANDO O TAMANHO DA IMAGEM */
+    max-width: 300px;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+}
+
+
+/*======================================================*/
+/* 5. BOTÕES DE NAVEGAÇÃO                               */
+/*======================================================*/
+
+.controles {
+    display: flex;
+    gap: 40px; /* Mais espaço entre botões */
+}
+
+.pokedex-button {
+    padding: 12px 25px; /* Botões maiores */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em; /* Fonte dos botões maior */
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    
+    background-color: var(--cor-botoes); 
+    color: #fff; 
+    box-shadow: 0 6px var(--cor-botoes-sombra); /* Sombra 3D maior */
+    transition: all 0.1s ease;
+}
+
+/* Efeito de click (pressionado) */
+.pokedex-button:active {
+    box-shadow: 0 2px var(--cor-botoes-sombra);
+    transform: translateY(4px);
+}
+
+/* Estilo do botão desabilitado */
+.pokedex-button:disabled {
+    background-color: #3d3d3d; 
+    color: #555;
+    cursor: not-allowed;
+    box-shadow: 0 6px #222;
+    transform: none;
+}
